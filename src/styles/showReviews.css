@@ -1,0 +1,42 @@
+.reviewContainer {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  background-image: url("https://www.transparenttextures.com/patterns/grey-jean.png");
+  background-color: #2e002e;
+  border-radius: 20px;
+}
+
+.titleReview {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  color: #fbfbfb;
+}
+
+.reviewContainer h3 {
+  color: #fbfbfb;
+}
+
+.reviewContainer p {
+  color: black;
+  font-size: 20px;
+}
+
+.reviews {
+  display: flex;
+  width: 100%;
+  background-color: #fbfbfb;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-3.png");
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 2px 6px 5px black;
+}
+
+.quotes {
+  color: #2e002e;
+  margin-right: 1em;
+  margin-left: 1%;
+}

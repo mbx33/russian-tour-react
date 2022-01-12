@@ -1,0 +1,14 @@
+.addReviewContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: white;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mainReviewContainer {
+  display: flex;
+  flex-direction: column;
+}

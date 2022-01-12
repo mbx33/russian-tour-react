@@ -1,0 +1,273 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box; /*if you add a border or padding it doesn't effect the width of it*/
+  margin: 0;
+  padding: 0;
+}
+
+/* These are the Header Styles ------------------------------------------*/
+
+.mainHeaderContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  background-color: rgba(34, 34, 34, 0);
+}
+
+.nav {
+  position: fixed;
+  background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
+  background-color: rgba(34, 34, 34, 0.863);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 100;
+  border-bottom: 3px solid #2e002e;
+  height: 8%;
+  box-shadow: -3px 4px 8px #2e002e;
+}
+
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  width: 100%;
+  /* background-color: rgba(34, 34, 34, 0.205); */
+  /* border-top: 2px solid white; */
+  /* border-bottom: 2px solid white; */
+}
+
+.navLinks {
+  color: whitesmoke;
+}
+
+.navLinks:hover {
+  color: purple;
+}
+
+.main-nav-active {
+  color: #dc493a;
+}
+
+.nav .nav-container {
+  font-size: 25px;
+  color: whitesmoke;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  flex-wrap: wrap;
+  /* background-color: rgba(34, 34, 34, 0.387); */
+  border-radius: 25%;
+  box-shadow: 0 2px 3 whitesmoke;
+  width: 50%; /*Change this to 0 and see*/
+  height: 15%;
+  padding: 10px;
+}
+
+/* ------------------These are the HomePage Styles ------------------------*/
+
+.hero > video {
+  width: 100%;
+}
+
+.hero {
+  /* background-image: url("./Assets/stpeter-main-photo.jpeg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #464646;
+  height: 93vh;
+  width: 100%;
+  background-position: center center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.homePage {
+  width: 100%;
+  padding-top: 3em;
+}
+
+.homeIconContainer {
+  margin-top: 3em;
+  justify-content: space-evenly;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-left: 1px solid black;
+  border-right: 1px solid white;
+  box-shadow: 5px 0px 7px black;
+  padding: 20px;
+}
+
+.travelTipIcon {
+  width: 30%;
+  font-size: 17px;
+  font-family: "Roboto";
+}
+
+.communicateContainer {
+  width: 30%;
+  font-size: 17px;
+  font-family: "Roboto";
+  /* border-left: 1px solid white;
+  border-right: 1px solid white; */
+}
+
+.tripPlannerIcon {
+  width: 30%;
+  font-size: 17px;
+  font-family: "Roboto";
+}
+
+.logo {
+  position: absolute;
+  z-index: 200;
+  right: 0;
+  top: 0;
+}
+
+.headContainer {
+  display: flex;
+  justify-items: center;
+}
+
+.mainContainer {
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  /* font-size: 20px; */
+}
+
+.mainContainer h1 {
+  text-align: center;
+}
+
+/* .mainContainer h1,
+p {
+  width: 70%;
+  color: whitesmoke;
+  align-items: center;
+} */
+
+@media only screen and (max-width: 767px) {
+  .hero {
+    background-image: urt("./Assets/HomePageVideo.mp4");
+  }
+}
+
+/*-------Custom Tour Page ----------------------*/
+
+.customTourContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  object-fit: cover;
+}
+
+.customTourMainContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.cardContainer {
+  margin-top: 3em;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.cardGroup {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: blue; */
+  /* border-right: 2px solid purple; */
+  width: 60%;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 5px;
+}
+
+.customTourContentConainer {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-top: 1em;
+  text-align: center;
+  font-size: 20px;
+  color: whitesmoke;
+  align-items: center;
+}
+
+.expandedContentHead {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  background-image: url("https://www.transparenttextures.com/patterns/redox-02.png");
+  background-color: whitesmoke;
+  text-align: left;
+  border: 2px solid black;
+  color: whitesmoke;
+  /* box-shadow: 2px 3px 4px black; */
+  align-items: center;
+}
+
+.expandedContent {
+  color: whitesmoke;
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  background-image: url("https://www.transparenttextures.com/patterns/grey-jean.png");
+  /* background-color: rgba(37, 2, 37, 0.796); */
+  background-color: #2e002e;
+  text-align: left;
+  border: 2px solid black;
+  box-shadow: 2px 3px 4px black;
+  align-items: center;
+}
+
+/* Footer Styles ------------------------------------------------------*/
+
+.footerContainer {
+  width: 100%;
+  display: flex;
+  /* background-color: blue; */
+  justify-content: flex-end;
+  padding-right: 1em;
+  margin-top: 1em;
+}
+
+.footerContainer ul {
+  display: flex;
+  width: 20%;
+  justify-content: space-evenly;
+}
